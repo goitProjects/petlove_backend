@@ -1,0 +1,953 @@
+[
+  {
+    "species": "dog",
+    "category": "sell",
+    "price": 150,
+    "title": "Golden Retriever Puppies",
+    "name": "Max",
+    "birthday": "2022-01-10",
+    "comment": "Adorable puppy looking for a loving home.",
+    "sex": "male",
+    "location": "641ffcc1ae4e889a02d25ca5",
+    "imgURL": "https://ftp.goit.study/img/pets/1.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "fish",
+    "category": "free",
+    "title": "Colorful Betta Fish",
+    "name": "Splash",
+    "birthday": "2021-04-05",
+    "comment": "Free to a good home. Beautiful betta fish.",
+    "sex": "unknown",
+    "location": "641ffcd2ae4e889a02d28d11",
+    "imgURL": "https://ftp.goit.study/img/pets/3.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "lizard",
+    "category": "lost",
+    "title": "Lost Gecko",
+    "name": "Gizmo",
+    "birthday": "2020-09-15",
+    "comment": "Friendly gecko lost around the park. Reward offered.",
+    "sex": "unknown",
+    "location": "641ffcd2ae4e889a02d28db9",
+    "imgURL": "https://ftp.goit.study/img/pets/4.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "turtle",
+    "category": "found",
+    "title": "Found Red-Eared Slider",
+    "name": "Shelly",
+    "birthday": "2019-12-08",
+    "comment": "Found this turtle near the pond. Contact if yours.",
+    "sex": "unknown",
+    "location": "641ffcd3ae4e889a02d29c75",
+    "imgURL": "https://ftp.goit.study/img/pets/5.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "cat",
+    "category": "sell",
+    "price": 130,
+    "title": "Persian Cat for Sale",
+    "name": "Fluffy",
+    "birthday": "2019-06-20",
+    "comment": "Gorgeous Persian cat available for adoption.",
+    "sex": "female",
+    "location": "641ffcd4ae4e889a02d2a6be",
+    "imgURL": "https://ftp.goit.study/img/pets/6.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "bird",
+    "category": "free",
+    "title": "Canary Looking for a Home",
+    "name": "Sunny",
+    "birthday": "2020-03-12",
+    "comment": "Free to a caring owner. Beautiful canary.",
+    "sex": "male",
+    "location": "641ffcc3ae4e889a02d26d45",
+    "imgURL": "https://ftp.goit.study/img/pets/7.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "snake",
+    "category": "lost",
+    "title": "Lost Ball Python",
+    "name": "Slither",
+    "birthday": "2018-09-25",
+    "comment": "Lost ball python. Please help find.",
+    "sex": "unknown",
+    "location": "641ffcc3ae4e889a02d26e23",
+    "imgURL": "https://ftp.goit.study/img/pets/8.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "butterfly",
+    "category": "found",
+    "title": "Found Monarch Butterfly",
+    "name": "Flutter",
+    "birthday": "2022-05-01",
+    "comment": "Found injured monarch butterfly. Seeking a butterfly lover.",
+    "sex": "unknown",
+    "location": "641ffcc3ae4e889a02d26ee5",
+    "imgURL": "https://ftp.goit.study/img/pets/9.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "dog",
+    "category": "free",
+    "title": "Puppy Needs a Home",
+    "name": "Riley",
+    "birthday": "2022-02-15",
+    "comment": "Friendly puppy needs a loving family.",
+    "sex": "female",
+    "location": "641ffcc3ae4e889a02d273f9",
+    "imgURL": "https://ftp.goit.study/img/pets/10.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "lizard",
+    "category": "sell",
+    "price": 145,
+    "title": "Crested Gecko for Sale",
+    "name": "Spike",
+    "birthday": "2020-08-10",
+    "comment": "Beautiful crested gecko looking for a new home.",
+    "sex": "male",
+    "location": "641ffcc4ae4e889a02d2741b",
+    "imgURL": "https://ftp.goit.study/img/pets/11.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "monkey",
+    "category": "found",
+    "title": "Found Capuchin Monkey",
+    "name": "Mango",
+    "birthday": "2019-11-05",
+    "comment": "Found this adorable capuchin monkey. Contact to claim.",
+    "sex": "male",
+    "location": "641ffcd3ae4e889a02d29c75",
+    "imgURL": "https://ftp.goit.study/img/pets/12.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "ants",
+    "category": "free",
+    "title": "Ant Farm Giveaway",
+    "name": "Colony 123",
+    "birthday": "2021-04-01",
+    "comment": "Free ant farm with a thriving colony. Educational and fascinating!",
+    "sex": "multiple",
+    "location": "641ffcd4ae4e889a02d2a3d4",
+    "imgURL": "https://ftp.goit.study/img/pets/13.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "cat",
+    "category": "found",
+    "title": "Found Siamese Cat",
+    "name": "Mittens",
+    "birthday": "2019-10-12",
+    "comment": "Found a lost Siamese cat in great condition. Seeking owner.",
+    "sex": "male",
+    "location": "641ffcd4ae4e889a02d2a3d6",
+    "imgURL": "https://ftp.goit.study/img/pets/14.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "bird",
+    "category": "sell",
+    "price": 40,
+    "title": "Exotic Parakeets for Sale",
+    "name": "Sky and Cloud",
+    "birthday": "2021-01-28",
+    "comment": "Beautiful parakeets with vibrant colors for sale as a pair.",
+    "sex": "unknown",
+    "location": "641ffcd6ae4e889a02d2b55b",
+    "imgURL": "https://ftp.goit.study/img/pets/15.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "snake",
+    "category": "free",
+    "title": "Friendly Garter Snake",
+    "name": "Slinky",
+    "birthday": "2020-07-05",
+    "comment": "Free to a good home. Slinky is a docile garter snake.",
+    "sex": "female",
+    "location": "641ffcd6ae4e889a02d2b5c0",
+    "imgURL": "https://ftp.goit.study/img/pets/16.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "bees",
+    "category": "lost",
+    "title": "Lost Beehive",
+    "name": "Buzzers",
+    "birthday": null,
+    "comment": "Lost beehive with a swarm of bees. Please handle with care.",
+    "sex": "multiple",
+    "location": "641ffcd6ae4e889a02d2b603",
+    "imgURL": "https://ftp.goit.study/img/pets/17.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "monkey",
+    "category": "free",
+    "title": "Capuchin Monkey Needs Companion",
+    "name": "Banana",
+    "birthday": "2018-12-03",
+    "comment": "Friendly capuchin monkey looking for a monkey companion.",
+    "sex": "male",
+    "location": "641ffcd6ae4e889a02d2b654",
+    "imgURL": "https://ftp.goit.study/img/pets/18.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "turtle",
+    "category": "sell",
+    "price": 30,
+    "title": "African Sideneck Turtle for Sale",
+    "name": "Spike",
+    "birthday": "2019-05-20",
+    "comment": "Healthy African sideneck turtle for sale. Comes with habitat.",
+    "sex": "unknown",
+    "location": "641ffcd6ae4e889a02d2b68b",
+    "imgURL": "https://ftp.goit.study/img/pets/19.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "spider",
+    "category": "lost",
+    "title": "Lost Tarantula",
+    "name": "Fang",
+    "birthday": "2020-09-10",
+    "comment": "Lost tarantula with distinctive markings. Reward offered.",
+    "sex": "unknown",
+    "location": "641ffcd7ae4e889a02d2c239",
+    "imgURL": "https://ftp.goit.study/img/pets/20.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "fish",
+    "category": "found",
+    "title": "Found Goldfish",
+    "name": "Bubbles",
+    "birthday": null,
+    "comment": "Found a goldfish in a pond. Looking for its owner.",
+    "sex": "unknown",
+    "location": "641ffcd7ae4e889a02d2c24a",
+    "imgURL": "https://ftp.goit.study/img/pets/21.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "dog",
+    "category": "lost",
+    "title": "Lost Shiba Inu",
+    "name": "Mochi",
+    "birthday": "2020-03-15",
+    "comment": "Lost Shiba Inu with a distinctive curly tail. Reward offered.",
+    "sex": "female",
+    "location": "641ffcd7ae4e889a02d2c26b",
+    "imgURL": "https://ftp.goit.study/img/pets/22.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "cat",
+    "category": "sell",
+    "price": 70,
+    "title": "Sphynx Cat for Sale",
+    "name": "Naked Nala",
+    "birthday": "2019-07-22",
+    "comment": "Adorable Sphynx cat available for adoption.",
+    "sex": "female",
+    "location": "641ffcd7ae4e889a02d2c341",
+    "imgURL": "https://ftp.goit.study/img/pets/23.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "butterfly",
+    "category": "free",
+    "title": "Butterfly Garden Giveaway",
+    "name": "Flutter Haven",
+    "birthday": null,
+    "comment": "Free butterfly garden with a variety of species. Ideal for nature lovers.",
+    "sex": "multiple",
+    "location": "641ffcd7ae4e889a02d2c400",
+    "imgURL": "https://ftp.goit.study/img/pets/24.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "frog",
+    "category": "found",
+    "title": "Found Poison Dart Frog",
+    "name": "Toxic Tango",
+    "birthday": "2021-01-10",
+    "comment": "Found colorful poison dart frog. Seeking owner or new home.",
+    "sex": "unknown",
+    "location": "641ffcd8ae4e889a02d2c78a",
+    "imgURL": "https://ftp.goit.study/img/pets/25.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "dog",
+    "category": "free",
+    "title": "Playful Border Collie",
+    "name": "Bolt",
+    "birthday": "2021-04-20",
+    "comment": "Energetic Border Collie looking for an active family.",
+    "sex": "male",
+    "location": "641ffcd8ae4e889a02d2c74b",
+    "imgURL": "https://ftp.goit.study/img/pets/26.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "fish",
+    "category": "sell",
+    "price": 10,
+    "title": "Colorful Betta Pair",
+    "name": "Aqua and Coral",
+    "birthday": "2022-02-05",
+    "comment": "Stunning Betta pair available for a well-maintained aquarium.",
+    "sex": "multiple",
+    "location": "641ffcd8ae4e889a02d2c73c",
+    "imgURL": "https://ftp.goit.study/img/pets/27.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "dog",
+    "category": "sell",
+    "price": 170,
+    "title": "Golden Retriever Puppies",
+    "name": "Daisy",
+    "birthday": "2022-01-10",
+    "comment": "Adorable puppy looking for a loving home.",
+    "sex": "female",
+    "location": "641ffcc1ae4e889a02d25cad",
+    "imgURL": "https://ftp.goit.study/img/pets/2.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "bird",
+    "category": "lost",
+    "title": "Lost Cockatiel",
+    "name": "Sunny",
+    "birthday": "2019-12-12",
+    "comment": "Lost cockatiel with a yellow crest. Reward for safe return.",
+    "sex": "unknown",
+    "location": "641ffcd8ae4e889a02d2c73a",
+    "imgURL": "https://ftp.goit.study/img/pets/28.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "turtle",
+    "category": "found",
+    "title": "Found Box Turtle",
+    "name": "Shelly",
+    "birthday": "2020-08-01",
+    "comment": "Found box turtle in a backyard. Seeking owner or new home.",
+    "sex": "unknown",
+    "location": "641ffcd7ae4e889a02d2c60c",
+    "imgURL": "https://ftp.goit.study/img/pets/29.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "lizard",
+    "category": "sell",
+    "price": 40,
+    "title": "Leopard Gecko for Sale",
+    "name": "Leo",
+    "birthday": "2020-09-10",
+    "comment": "Beautiful leopard gecko looking for a new home.",
+    "sex": "male",
+    "location": "641ffcd7ae4e889a02d2c5d1",
+    "imgURL": "https://ftp.goit.study/img/pets/30.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "cat",
+    "category": "free",
+    "title": "Playful Tabby Kitten",
+    "name": "Whisker",
+    "birthday": "2022-03-05",
+    "comment": "Adorable tabby kitten looking for a loving family.",
+    "sex": "female",
+    "location": "641ffcd7ae4e889a02d2c5b9",
+    "imgURL": "https://ftp.goit.study/img/pets/31.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "bird",
+    "category": "found",
+    "title": "Found Lovebird",
+    "name": "Valentine",
+    "birthday": null,
+    "comment": "Found a lovebird with vibrant plumage. Seeking owner.",
+    "sex": "unknown",
+    "location": "641ffcd7ae4e889a02d2c4d3",
+    "imgURL": "https://ftp.goit.study/img/pets/32.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "snake",
+    "category": "lost",
+    "title": "Lost Boa Constrictor",
+    "name": "Squeeze",
+    "birthday": "2019-11-15",
+    "comment": "Lost boa constrictor. Approach with caution. Reward offered.",
+    "sex": "unknown",
+    "location": "641ffcd7ae4e889a02d2c467",
+    "imgURL": "https://ftp.goit.study/img/pets/33.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "dog",
+    "category": "sell",
+    "price": 90,
+    "title": "Purebred Golden Retriever Puppies",
+    "name": "Charlie and Daisy",
+    "birthday": "2022-05-10",
+    "comment": "Beautiful purebred Golden Retriever puppies for sale.",
+    "sex": "male",
+    "location": "641ffcd7ae4e889a02d2c3f4",
+    "imgURL": "https://ftp.goit.study/img/pets/34.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "cat",
+    "category": "free",
+    "title": "Adoptable Siamese Mix",
+    "name": "Mittens Jr.",
+    "birthday": "2021-01-18",
+    "comment": "Sweet Siamese mix cat looking for a forever home.",
+    "sex": "male",
+    "location": "641ffcd7ae4e889a02d2c36c",
+    "imgURL": "https://ftp.goit.study/img/pets/35.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "dog",
+    "category": "lost",
+    "title": "Lost Dachshund",
+    "name": "Wiener",
+    "birthday": "2020-07-01",
+    "comment": "Lost Dachshund with a distinctive long body. Reward offered.",
+    "sex": "male",
+    "location": "641ffcd7ae4e889a02d2c299",
+    "imgURL": "https://ftp.goit.study/img/pets/36.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "cat",
+    "category": "sell",
+    "price": 45,
+    "title": "Maine Coon Kittens for Sale",
+    "name": "Whisk and Purr",
+    "birthday": "2022-03-20",
+    "comment": "Playful Maine Coon kittens available for adoption.",
+    "sex": "female",
+    "location": "641ffcd7ae4e889a02d2c23e",
+    "imgURL": "https://ftp.goit.study/img/pets/37.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "cat",
+    "category": "found",
+    "title": "Found Bengal Cat",
+    "name": "Sapphire",
+    "birthday": "2020-04-12",
+    "comment": "Found Bengal cat with striking spots and blue eyes.",
+    "sex": "female",
+    "location": "641ffcd7ae4e889a02d2c208",
+    "imgURL": "https://ftp.goit.study/img/pets/38.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "dog",
+    "category": "free",
+    "title": "Rescued Mixed Breed Pup",
+    "name": "Luna",
+    "birthday": "2021-06-25",
+    "comment": "Rescued mixed breed puppy looking for a loving home.",
+    "sex": "female",
+    "location": "641ffcd7ae4e889a02d2c1a6",
+    "imgURL": "https://ftp.goit.study/img/pets/39.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "dog",
+    "category": "sell",
+    "price": 120,
+    "title": "German Shepherd Puppies",
+    "name": "Rocky and Bella",
+    "birthday": "2022-02-10",
+    "comment": "Purebred German Shepherd puppies available for sale.",
+    "sex": "male",
+    "location": "641ffcd7ae4e889a02d2c0e4",
+    "imgURL": "https://ftp.goit.study/img/pets/40.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "cat",
+    "category": "lost",
+    "title": "Lost Ragdoll Cat",
+    "name": "Whisper",
+    "birthday": "2019-09-08",
+    "comment": "Lost Ragdoll cat with distinctive blue eyes and color points.",
+    "sex": "male",
+    "location": "641ffcd7ae4e889a02d2c092",
+    "imgURL": "https://ftp.goit.study/img/pets/41.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "dog",
+    "category": "lost",
+    "title": "Lost Husky Mix",
+    "name": "Shadow",
+    "birthday": "2019-12-01",
+    "comment": "Lost Husky mix with striking blue eyes. Reward offered.",
+    "sex": "male",
+    "location": "641ffcd7ae4e889a02d2c06c",
+    "imgURL": "https://ftp.goit.study/img/pets/42.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "cat",
+    "category": "sell",
+    "price": 80,
+    "title": "Scottish Fold Kittens",
+    "name": "Mittens and Whiskers",
+    "birthday": "2022-01-15",
+    "comment": "Adorable Scottish Fold kittens for sale. Unique folded ears.",
+    "sex": "female",
+    "location": "641ffcd7ae4e889a02d2c04e",
+    "imgURL": "https://ftp.goit.study/img/pets/43.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "dog",
+    "category": "free",
+    "title": "Friendly Labradoodle",
+    "name": "Coco",
+    "birthday": "2020-06-08",
+    "comment": "Affectionate Labradoodle looking for a caring family.",
+    "sex": "female",
+    "location": "641ffcd7ae4e889a02d2c035",
+    "imgURL": "https://ftp.goit.study/img/pets/44.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "cat",
+    "category": "found",
+    "title": "Found Persian Cat",
+    "name": "Princess",
+    "birthday": "2019-03-20",
+    "comment": "Found Persian cat in good condition. Seeking owner.",
+    "sex": "female",
+    "location": "641ffcd6ae4e889a02d2befa",
+    "imgURL": "https://ftp.goit.study/img/pets/45.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "bird",
+    "category": "sell",
+    "price": 25,
+    "title": "African Grey Parrot",
+    "name": "Rio",
+    "birthday": "2019-08-15",
+    "comment": "Intelligent African Grey parrot for sale. Excellent talker.",
+    "sex": "unknown",
+    "location": "641ffcd6ae4e889a02d2bdc1",
+    "imgURL": "https://ftp.goit.study/img/pets/46.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "bird",
+    "category": "free",
+    "title": "Cockatiel Duo",
+    "name": "Sunny and Cloud",
+    "birthday": "2020-04-30",
+    "comment": "Friendly Cockatiel pair available for free to a loving home.",
+    "sex": "unknown",
+    "location": "641ffcd6ae4e889a02d2bca5",
+    "imgURL": "https://ftp.goit.study/img/pets/47.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "bird",
+    "category": "lost",
+    "title": "Lost Macaw",
+    "name": "Mango",
+    "birthday": "2018-10-10",
+    "comment": "Lost colorful Macaw. Please contact if spotted.",
+    "sex": "unknown",
+    "location": "641ffcd6ae4e889a02d2bc49",
+    "imgURL": "https://ftp.goit.study/img/pets/48.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "bird",
+    "category": "found",
+    "title": "Found Budgerigar",
+    "name": "Sky",
+    "birthday": null,
+    "comment": "Found a friendly Budgerigar. Seeking owner or new home.",
+    "sex": "unknown",
+    "location": "641ffcd6ae4e889a02d2ba2b",
+    "imgURL": "https://ftp.goit.study/img/pets/49.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "ants",
+    "category": "sell",
+    "price": 40,
+    "title": "Ant Colony with Queen",
+    "name": "Empire 123",
+    "birthday": null,
+    "comment": "Thriving ant colony for sale. Includes a healthy queen.",
+    "sex": "multiple",
+    "location": "641ffcd6ae4e889a02d2b782",
+    "imgURL": "https://ftp.goit.study/img/pets/50.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "bees",
+    "category": "free",
+    "title": "Beehive Giveaway",
+    "name": "Buzz Haven",
+    "birthday": null,
+    "comment": "Free beehive with a buzzing colony. Ideal for pollination.",
+    "sex": "multiple",
+    "location": "641ffcd5ae4e889a02d2a810",
+    "imgURL": "https://ftp.goit.study/img/pets/51.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  },
+  {
+    "species": "ants",
+    "category": "lost",
+    "title": "Lost Ant Queen",
+    "name": "Queenie",
+    "birthday": null,
+    "comment": "Lost ant queen. Important for the colony's survival. Reward offered.",
+    "sex": "female",
+    "location": "641ffcd3ae4e889a02d29b65",
+    "imgURL": "https://ftp.goit.study/img/pets/52.webp",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1702291408477"
+      }
+    },
+    "user": "6576e7d0c4cc99fc5ef94221",
+    "popularity": 1
+  }
+]

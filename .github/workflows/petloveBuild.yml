@@ -62,7 +62,8 @@ jobs:
     - run: |
         echo "
         PORT=$PORT
-        DB_HOST=${{secrets.DB_HOST}}" > .env
+        MONGO_DB=${{secrets.MONGO_DB}}
+        SECRET_KEY=${{secrets.SECRET_KEY}}" > .env
         ls -la
         npm install --force
         echo "${{secrets.SSH_PRIVATE_KEY}}" > key.pem
@@ -77,10 +78,15 @@ jobs:
             echo "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
             chmod 600 key.pem
             mkdir -p $HOME/.ssh && ssh-keyscan -H $SERVER_IP >> $HOME/.ssh/known_hosts
-            ssh -i key.pem $SERVER_USER@$SERVER_IP "cd /$SERVER_USER/backendScripts && node createBackendServices.js $PROJECT_FOLDER"
-            ssh -i key.pem $SERVER_USER@$SERVER_IP "cp /$SERVER_USER/backendScripts/$PROJECT_FOLDER.service /etc/systemd/system/ && systemctl enable $PROJECT_FOLDER.service && systemctl start $PROJECT_FOLDER.service"
-            ssh -i key.pem $SERVER_USER@$SERVER_IP "cp /$SERVER_USER/backendScripts/$PROJECT_FOLDER-watcher.service /etc/systemd/system/ && systemctl enable $PROJECT_FOLDER-watcher.service && systemctl start $PROJECT_FOLDER-watcher.service"
-            ssh -i key.pem $SERVER_USER@$SERVER_IP "cp /$SERVER_USER/backendScripts/$PROJECT_FOLDER-watcher.path /etc/systemd/system/ && systemctl enable $PROJECT_FOLDER-watcher.path && systemctl start $PROJECT_FOLDER-watcher.path"
+            # Перевірка, чи файл конфігурації вже існує у /etc/systemd/system
+            if ssh -i key.pem $SERVER_USER@$SERVER_IP "test -f /etc/systemd/system/$PROJECT_FOLDER.service"; then
+              echo "Config file already exists in /etc/systemd/system"
+            else
+              ssh -i key.pem $SERVER_USER@$SERVER_IP "cd /$SERVER_USER/backendScripts && node createBackendServices.js $PROJECT_FOLDER"
+              ssh -i key.pem $SERVER_USER@$SERVER_IP "cp /$SERVER_USER/backendScripts/$PROJECT_FOLDER.service /etc/systemd/system/ && systemctl enable $PROJECT_FOLDER.service && systemctl start $PROJECT_FOLDER.service"
+              ssh -i key.pem $SERVER_USER@$SERVER_IP "cp /$SERVER_USER/backendScripts/$PROJECT_FOLDER-watcher.service /etc/systemd/system/ && systemctl enable $PROJECT_FOLDER-watcher.service && systemctl start $PROJECT_FOLDER-watcher.service"
+              ssh -i key.pem $SERVER_USER@$SERVER_IP "cp /$SERVER_USER/backendScripts/$PROJECT_FOLDER-watcher.path /etc/systemd/system/ && systemctl enable $PROJECT_FOLDER-watcher.path && systemctl start $PROJECT_FOLDER-watcher.path"
+            fi
 
     - name: Create Nginx conf
       uses: actions/checkout@v2

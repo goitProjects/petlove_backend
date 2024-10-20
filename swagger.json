@@ -14,9 +14,6 @@
   "servers": [
     {
       "url": "https://petlove.b.goit.study/api"
-    },
-    {
-      "url": "http://localhost:6004/api"
     }
   ],
   "tags": [
@@ -813,6 +810,10 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Bad request (invalid request query)",
+            "content": {}
           },
           "404": {
             "description": "Service not found",

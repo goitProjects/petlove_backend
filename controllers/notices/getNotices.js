@@ -1,7 +1,9 @@
 const { Notice } = require('../../models/notice');
+const sexList = require('../../data/sex');
 
 const getNotices = async (req, res) => {
-  const { keyword = '', category = '', species = '', locationId = '', byDate = true, byPrice, byPopularity, page = 1, limit = 6 } = req.query;
+  const { keyword = '', category = '', species = '', locationId = '', byDate = true, byPrice, byPopularity, page = 1, limit = 6, sex = '' } = req.query;
+
   const query = {};
 
   if (keyword) {
@@ -22,6 +24,10 @@ const getNotices = async (req, res) => {
   }
   if (byPopularity !== undefined) {
     sortOptions = { popularity: JSON.parse(byPopularity) ? 1 : -1 };
+  }
+
+  if (sexList.includes(sex)) {
+    query.sex = sex;
   }
 
   const skip = (page - 1) * limit;

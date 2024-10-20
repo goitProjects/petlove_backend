@@ -5,9 +5,17 @@
     "title": "Petlove",
     "description": "Petlove backend"
   },
-  "consumes": ["application/json"],
-  "produces": ["application/json"],
-  "servers": [{ "url": "https://petlove.b.goit.study/api" }],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "servers": [
+    {
+      "url": "https://petlove.b.goit.study/api"
+    }
+  ],
   "tags": [
     {
       "name": "Users",
@@ -33,7 +41,9 @@
   "paths": {
     "/users/signup": {
       "post": {
-        "tags": ["Users"],
+        "tags": [
+          "Users"
+        ],
         "summary": "User sign up",
         "requestBody": {
           "description": "Sign up object",
@@ -78,7 +88,9 @@
     },
     "/users/signin": {
       "post": {
-        "tags": ["Users"],
+        "tags": [
+          "Users"
+        ],
         "summary": "User sign in",
         "requestBody": {
           "description": "Sign in object",
@@ -123,9 +135,15 @@
     },
     "/users/current": {
       "get": {
-        "tags": ["Users"],
+        "tags": [
+          "Users"
+        ],
         "summary": "Get current user info",
-        "security": [{ "Bearer": [] }],
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -154,9 +172,15 @@
     },
     "/users/current/full": {
       "get": {
-        "tags": ["Users"],
+        "tags": [
+          "Users"
+        ],
         "summary": "Get current user full info",
-        "security": [{ "Bearer": [] }],
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -185,9 +209,15 @@
     },
     "/users/current/edit": {
       "patch": {
-        "tags": ["Users"],
+        "tags": [
+          "Users"
+        ],
         "summary": "User edit",
-        "security": [{ "Bearer": [] }],
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
         "requestBody": {
           "description": "Edit object",
           "required": true,
@@ -231,9 +261,15 @@
     },
     "/users/current/pets/add": {
       "post": {
-        "tags": ["Users"],
+        "tags": [
+          "Users"
+        ],
         "summary": "User adds pet",
-        "security": [{ "Bearer": [] }],
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
         "requestBody": {
           "description": "Pet object",
           "required": true,
@@ -273,9 +309,15 @@
     },
     "/users/current/pets/remove/{id}": {
       "delete": {
-        "tags": ["Users"],
+        "tags": [
+          "Users"
+        ],
         "summary": "Remove a pet from user pets",
-        "security": [{ "Bearer": [] }],
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
         "parameters": [
           {
             "in": "path",
@@ -319,9 +361,15 @@
     },
     "/users/signout": {
       "post": {
-        "tags": ["Users"],
+        "tags": [
+          "Users"
+        ],
         "summary": "User sign out",
-        "security": [{ "Bearer": [] }],
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -350,7 +398,9 @@
     },
     "/notices": {
       "get": {
-        "tags": ["Notices"],
+        "tags": [
+          "Notices"
+        ],
         "summary": "Get notices",
         "security": [],
         "parameters": [
@@ -368,7 +418,12 @@
             "description": "The category for searching",
             "schema": {
               "type": "string",
-              "enum": ["sell", "free", "lost", "found"]
+              "enum": [
+                "sell",
+                "free",
+                "lost",
+                "found"
+              ]
             }
           },
           {
@@ -377,7 +432,22 @@
             "description": "The species for searching",
             "schema": {
               "type": "string",
-              "enum": ["dog", "cat", "monkey", "bird", "snake", "turtle", "lizard", "frog", "fish", "ants", "bees", "butterfly", "spider", "scorpion"]
+              "enum": [
+                "dog",
+                "cat",
+                "monkey",
+                "bird",
+                "snake",
+                "turtle",
+                "lizard",
+                "frog",
+                "fish",
+                "ants",
+                "bees",
+                "butterfly",
+                "spider",
+                "scorpion"
+              ]
             }
           },
           {
@@ -430,6 +500,20 @@
               "type": "number",
               "default": 6
             }
+          },
+          {
+            "in": "query",
+            "name": "sex",
+            "description": "Sort notices by sex",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "unknown",
+                "female",
+                "male",
+                "multiple"
+              ]
+            }
           }
         ],
         "responses": {
@@ -456,7 +540,9 @@
     },
     "/notices/categories": {
       "get": {
-        "tags": ["Notices"],
+        "tags": [
+          "Notices"
+        ],
         "summary": "Get notice categories",
         "security": [],
         "parameters": [],
@@ -484,7 +570,9 @@
     },
     "/notices/sex": {
       "get": {
-        "tags": ["Notices"],
+        "tags": [
+          "Notices"
+        ],
         "summary": "Get notice sex",
         "security": [],
         "parameters": [],
@@ -512,7 +600,9 @@
     },
     "/notices/species": {
       "get": {
-        "tags": ["Notices"],
+        "tags": [
+          "Notices"
+        ],
         "summary": "Get notice species",
         "security": [],
         "parameters": [],
@@ -540,9 +630,15 @@
     },
     "/notices/favorites/add/{id}": {
       "post": {
-        "tags": ["Notices"],
+        "tags": [
+          "Notices"
+        ],
         "summary": "Add a notice to user favorites",
-        "security": [{ "Bearer": [] }],
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
         "parameters": [
           {
             "in": "path",
@@ -586,9 +682,15 @@
     },
     "/notices/favorites/remove/{id}": {
       "delete": {
-        "tags": ["Notices"],
+        "tags": [
+          "Notices"
+        ],
         "summary": "Remove a notice from user favorites",
-        "security": [{ "Bearer": [] }],
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
         "parameters": [
           {
             "in": "path",
@@ -632,9 +734,15 @@
     },
     "/notices/{id}": {
       "get": {
-        "tags": ["Notices"],
+        "tags": [
+          "Notices"
+        ],
         "summary": "Get a notice by id",
-        "security": [{ "Bearer": [] }],
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
         "parameters": [
           {
             "in": "path",
@@ -674,8 +782,56 @@
     },
     "/cities/": {
       "get": {
-        "tags": ["Cities"],
+        "tags": [
+          "Cities"
+        ],
         "summary": "Get Ukrainian cities",
+        "security": [],
+        "parameters": [
+          {
+            "in": "query",
+            "required": true,
+            "name": "keyword",
+            "description": "The keyword for city searching (min length: 3, max length: 48).",
+            "schema": {
+              "type": "string",
+              "minLength": 3,
+              "maxLength": 48
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetCitiesResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request (invalid request query)",
+            "content": {}
+          },
+          "404": {
+            "description": "Service not found",
+            "content": {}
+          },
+          "500": {
+            "description": "Server error",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/cities/locations": {
+      "get": {
+        "tags": [
+          "Cities"
+        ],
+        "summary": "Get all cities where are pets that descripted on notes",
         "security": [],
         "parameters": [],
         "responses": {
@@ -684,7 +840,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GetCitiesResponse"
+                  "$ref": "#/components/schemas/GetLocationsResponse"
                 }
               }
             }
@@ -702,7 +858,9 @@
     },
     "/friends/": {
       "get": {
-        "tags": ["Friends"],
+        "tags": [
+          "Friends"
+        ],
         "summary": "Get Petlove friends",
         "security": [],
         "parameters": [],
@@ -730,7 +888,9 @@
     },
     "/news": {
       "get": {
-        "tags": ["News"],
+        "tags": [
+          "News"
+        ],
         "summary": "Get news",
         "security": [],
         "parameters": [
@@ -788,7 +948,11 @@
     "schemas": {
       "SignUpRequest": {
         "type": "object",
-        "required": ["name", "email", "password"],
+        "required": [
+          "name",
+          "email",
+          "password"
+        ],
         "properties": {
           "name": {
             "type": "string",
@@ -834,7 +998,10 @@
       },
       "SignInRequest": {
         "type": "object",
-        "required": ["email", "password"],
+        "required": [
+          "email",
+          "password"
+        ],
         "properties": {
           "email": {
             "type": "string",
@@ -1023,7 +1190,14 @@
       },
       "AddPetRequest": {
         "type": "object",
-        "required": ["name", "title", "imgURL", "species", "birthday", "sex"],
+        "required": [
+          "name",
+          "title",
+          "imgURL",
+          "species",
+          "birthday",
+          "sex"
+        ],
         "properties": {
           "name": {
             "type": "string",
@@ -1042,20 +1216,22 @@
           },
           "species": {
             "type": "string",
-            "enum": ["dog",
-            "cat",
-            "monkey",
-            "bird",
-            "snake",
-            "turtle",
-            "lizard",
-            "frog",
-            "fish",
-            "ants",
-            "bees" ,
-            "butterfly",
-            "spider",
-            "scorpion"],
+            "enum": [
+              "dog",
+              "cat",
+              "monkey",
+              "bird",
+              "snake",
+              "turtle",
+              "lizard",
+              "frog",
+              "fish",
+              "ants",
+              "bees",
+              "butterfly",
+              "spider",
+              "scorpion"
+            ],
             "description": "Pet species",
             "example": "dog"
           },
@@ -1066,376 +1242,376 @@
           },
           "sex": {
             "type": "string",
-            "enum": ["unknown","female", "male", "multiple"],
+            "enum": [
+              "unknown",
+              "female",
+              "male",
+              "multiple"
+            ],
             "description": "Pet sex",
             "example": "male"
           }
         }
       },
       "CurrentFullResponse": {
-"type": "object",
-"properties": {
-  "_id": {
-    "type": "string",
-    "description": "User id",
-    "example": "65d47cee94ee27539ccf3e28"
-  },
-  "name": {
-    "type": "string",
-    "description": "User name",
-    "example": "TestName"
-  },
-  "email": {
-    "type": "string",
-    "description": "User email",
-    "example": "test@gmail.com"
-  },
-  "avatar": {
-    "type": "string",
-    "description": "User avatar",
-    "example": "https://test.png"
-  },
-  "phone": {
-    "type": "string",
-    "description": "User phone",
-    "example": "+381111111111"
-  },
-  "token": {
-    "type": "string",
-    "description": "User token",
-    "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjA3MDAzOTJhMjMxNWFiODk2MGMxYiIsImlhdCI6MTY4OTI4NDYxMiwiZXhwIjoxNjg5MzY3NDEyfQ.a8GLmpGRC0BWzhLyd2UVTpH0Cp6j-m9hrxu4MCnaQPM"
-  }, 
-  "noticesViewed": {
-    "type": "object",
-    "properties": {
-      "_id": {
-        "type": "string",
-        "description": "Notice id",
-        "example": "6589436d05a6bcd9b9379425"
-      },
-      "species": {
-        "type": "string",
-        "description": "Pet species",
-        "example": "bird"
-      },
-      "category": {
-        "type": "string",
-        "description": "Notice category",
-        "example": "free"
-      },
-      "title": {
-        "type": "string",
-        "description": "Notice title",
-        "example": "Canary Looking for a Home"
-      },
-      "name": {
-        "type": "string",
-        "description": "Pet name",
-        "example": "Sunny"
-      },
-      "birthday": {
-        "type": "string",
-        "description": "Pet birthday",
-        "example": "2020-03-12"
-      },
-      "comment": {
-        "type": "string",
-        "description": "Notice comment",
-        "example": "Free to a caring owner. Beautiful canary."
-      },
-      "sex": {
-        "type": "string",
-        "description": "Pet sex",
-        "example": "male"
-      },
-      "location": {
         "type": "object",
         "properties": {
           "_id": {
             "type": "string",
-            "description": "Pet location id",
-            "example": "641ffcc3ae4e889a02d26d45"
+            "description": "User id",
+            "example": "65d47cee94ee27539ccf3e28"
           },
-          "stateEn": {
+          "name": {
             "type": "string",
-            "description": "Pet location state",
-            "example": "Dnipropetrovska"
-          },
-          "cityEn": {
-            "type": "string",
-            "description": "Pet location city",
-            "example": "Dnipro"
-          }
-        }
-      },
-      "imgUrl": {
-        "type": "string",
-        "description": "Pet image url",
-        "example": "https://ftp.goit.study/img/pets/7.webp"
-      },
-      "popularity": {
-        "type": "number",
-        "description": "Notice popularity",
-        "example": 2
-      },
-      "user": {
-        "type": "object",
-        "properties": {
-          "_id": {
-            "type": "string",
-            "description": "Notice author id",
-            "example": "6576e7d0c4cc99fc5ef94221"
+            "description": "User name",
+            "example": "TestName"
           },
           "email": {
             "type": "string",
-            "description": "Notice author email",
+            "description": "User email",
             "example": "test@gmail.com"
+          },
+          "avatar": {
+            "type": "string",
+            "description": "User avatar",
+            "example": "https://test.png"
           },
           "phone": {
             "type": "string",
-            "description": "Notice author phone",
-            "example": "+380730000000"
+            "description": "User phone",
+            "example": "+381111111111"
+          },
+          "token": {
+            "type": "string",
+            "description": "User token",
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjA3MDAzOTJhMjMxNWFiODk2MGMxYiIsImlhdCI6MTY4OTI4NDYxMiwiZXhwIjoxNjg5MzY3NDEyfQ.a8GLmpGRC0BWzhLyd2UVTpH0Cp6j-m9hrxu4MCnaQPM"
+          },
+          "noticesViewed": {
+            "type": "object",
+            "properties": {
+              "_id": {
+                "type": "string",
+                "description": "Notice id",
+                "example": "6589436d05a6bcd9b9379425"
+              },
+              "species": {
+                "type": "string",
+                "description": "Pet species",
+                "example": "bird"
+              },
+              "category": {
+                "type": "string",
+                "description": "Notice category",
+                "example": "free"
+              },
+              "title": {
+                "type": "string",
+                "description": "Notice title",
+                "example": "Canary Looking for a Home"
+              },
+              "name": {
+                "type": "string",
+                "description": "Pet name",
+                "example": "Sunny"
+              },
+              "birthday": {
+                "type": "string",
+                "description": "Pet birthday",
+                "example": "2020-03-12"
+              },
+              "comment": {
+                "type": "string",
+                "description": "Notice comment",
+                "example": "Free to a caring owner. Beautiful canary."
+              },
+              "sex": {
+                "type": "string",
+                "description": "Pet sex",
+                "example": "male"
+              },
+              "location": {
+                "type": "object",
+                "properties": {
+                  "_id": {
+                    "type": "string",
+                    "description": "Pet location id",
+                    "example": "641ffcc3ae4e889a02d26d45"
+                  },
+                  "stateEn": {
+                    "type": "string",
+                    "description": "Pet location state",
+                    "example": "Dnipropetrovska"
+                  },
+                  "cityEn": {
+                    "type": "string",
+                    "description": "Pet location city",
+                    "example": "Dnipro"
+                  }
+                }
+              },
+              "imgUrl": {
+                "type": "string",
+                "description": "Pet image url",
+                "example": "https://ftp.goit.study/img/pets/7.webp"
+              },
+              "popularity": {
+                "type": "number",
+                "description": "Notice popularity",
+                "example": 2
+              },
+              "user": {
+                "type": "object",
+                "properties": {
+                  "_id": {
+                    "type": "string",
+                    "description": "Notice author id",
+                    "example": "6576e7d0c4cc99fc5ef94221"
+                  },
+                  "email": {
+                    "type": "string",
+                    "description": "Notice author email",
+                    "example": "test@gmail.com"
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "Notice author phone",
+                    "example": "+380730000000"
+                  }
+                }
+              },
+              "createdAt": {
+                "type": "string",
+                "description": "Notice date of the creating",
+                "example": "2023-12-11T10:43:28.477Z"
+              },
+              "updatedAt": {
+                "type": "string",
+                "description": "Notice date of the updating",
+                "example": "2023-12-25T11:41:12.493Z"
+              }
+            }
+          },
+          "noticesFavorites": {
+            "type": "object",
+            "properties": {
+              "_id": {
+                "type": "string",
+                "description": "Notice id",
+                "example": "6589436d05a6bcd9b9379425"
+              },
+              "species": {
+                "type": "string",
+                "description": "Pet species",
+                "example": "bird"
+              },
+              "category": {
+                "type": "string",
+                "description": "Notice category",
+                "example": "free"
+              },
+              "title": {
+                "type": "string",
+                "description": "Notice title",
+                "example": "Canary Looking for a Home"
+              },
+              "name": {
+                "type": "string",
+                "description": "Pet name",
+                "example": "Sunny"
+              },
+              "birthday": {
+                "type": "string",
+                "description": "Pet birthday",
+                "example": "2020-03-12"
+              },
+              "comment": {
+                "type": "string",
+                "description": "Notice comment",
+                "example": "Free to a caring owner. Beautiful canary."
+              },
+              "sex": {
+                "type": "string",
+                "description": "Pet sex",
+                "example": "male"
+              },
+              "location": {
+                "type": "object",
+                "properties": {
+                  "_id": {
+                    "type": "string",
+                    "description": "Pet location id",
+                    "example": "641ffcc3ae4e889a02d26d45"
+                  },
+                  "stateEn": {
+                    "type": "string",
+                    "description": "Pet location state",
+                    "example": "Dnipropetrovska"
+                  },
+                  "cityEn": {
+                    "type": "string",
+                    "description": "Pet location city",
+                    "example": "Dnipro"
+                  }
+                }
+              },
+              "imgUrl": {
+                "type": "string",
+                "description": "Pet image url",
+                "example": "https://ftp.goit.study/img/pets/7.webp"
+              },
+              "popularity": {
+                "type": "number",
+                "description": "Notice popularity",
+                "example": 2
+              },
+              "user": {
+                "type": "object",
+                "properties": {
+                  "_id": {
+                    "type": "string",
+                    "description": "Notice author id",
+                    "example": "6576e7d0c4cc99fc5ef94221"
+                  },
+                  "email": {
+                    "type": "string",
+                    "description": "Notice author email",
+                    "example": "test@gmail.com"
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "Notice author phone",
+                    "example": "+380730000000"
+                  }
+                }
+              },
+              "createdAt": {
+                "type": "string",
+                "description": "Notice date of the creating",
+                "example": "2023-12-11T10:43:28.477Z"
+              },
+              "updatedAt": {
+                "type": "string",
+                "description": "Notice date of the updating",
+                "example": "2023-12-25T11:41:12.493Z"
+              }
+            }
+          },
+          "pets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "_id": {
+                  "type": "string",
+                  "description": "Pet id",
+                  "example": "3eew32e232ese2"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Pet name",
+                  "example": "Rex"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "Some description about pet",
+                  "example": "Playful family member"
+                },
+                "imgURL": {
+                  "type": "string",
+                  "description": "The imgURL with pet",
+                  "example": "https://test.webp"
+                },
+                "species": {
+                  "type": "string",
+                  "description": "Pet species",
+                  "example": "dog"
+                },
+                "birthday": {
+                  "type": "string",
+                  "description": "Pet birthday",
+                  "example": "2020-01-01"
+                },
+                "sex": {
+                  "type": "string",
+                  "description": "Pet sex",
+                  "example": "male"
+                }
+              }
+            }
           }
+        },
+        "example": {
+          "_id": "65d47cee94ee27539ccf3e28",
+          "name": "TestName",
+          "email": "tesewewewewewewet@gmail.com",
+          "avatar": "https://test.png",
+          "phone": "+381111111111",
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZDQ3Y2VlOTRlZTI3NTM5Y2NmM2UyOCIsImlhdCI6MTcwODQyNTk4MiwiZXhwIjoxNzk0ODI1OTgyfQ.bqrgsPxMhe7ZfrYQWskIZzX7SfwxKprkP9wV8zRYcLs",
+          "noticesViewed": [
+            {
+              "_id": "6589436d05a6bcd9b9379420",
+              "species": "dog",
+              "category": "sell",
+              "price": 150,
+              "title": "Golden Retriever Puppies",
+              "name": "Max",
+              "birthday": "2022-01-10",
+              "comment": "Adorable puppy looking for a loving home.",
+              "sex": "male",
+              "location": "641ffcc1ae4e889a02d25ca5",
+              "imgURL": "https://ftp.goit.study/img/pets/1.webp",
+              "createdAt": "2023-12-11T10:43:28.477Z",
+              "user": "6576e7d0c4cc99fc5ef94221",
+              "popularity": 3,
+              "updatedAt": "2024-02-20T10:47:23.359Z"
+            }
+          ],
+          "noticesFavorites": [
+            {
+              "_id": "6589436d05a6bcd9b9379421",
+              "species": "fish",
+              "category": "free",
+              "title": "Colorful Betta Fish",
+              "name": "Splash",
+              "birthday": "2021-04-05",
+              "comment": "Free to a good home. Beautiful betta fish.",
+              "sex": "unknown",
+              "location": "641ffcd2ae4e889a02d28d11",
+              "imgURL": "https://ftp.goit.study/img/pets/3.webp",
+              "createdAt": "2023-12-11T10:43:28.477Z",
+              "user": "6576e7d0c4cc99fc5ef94221",
+              "popularity": 3,
+              "updatedAt": "2024-02-20T10:17:49.528Z"
+            }
+          ],
+          "pets": [
+            {
+              "_id": "65d48367b3c1132894a596a3",
+              "name": "Lucie",
+              "title": "Playful family member",
+              "imgURL": "https://test2.webp",
+              "species": "cat",
+              "birthday": "2020-08-09",
+              "sex": "female",
+              "createdAt": "2024-02-20T10:48:07.780Z",
+              "updatedAt": "2024-02-20T10:48:07.780Z"
+            },
+            {
+              "_id": "65d48314cd5396262bb01808",
+              "name": "Rex",
+              "title": "Playful family member",
+              "imgURL": "https://test.webp",
+              "species": "dog",
+              "birthday": "2020-01-01",
+              "sex": "male",
+              "createdAt": "2024-02-20T10:46:44.907Z",
+              "updatedAt": "2024-02-20T10:46:44.907Z"
+            }
+          ],
+          "createdAt": "2024-02-20T10:20:30.887Z",
+          "updatedAt": "2024-02-20T10:48:07.834Z"
         }
       },
-      "createdAt": {
-        "type": "string",
-        "description": "Notice date of the creating",
-        "example": "2023-12-11T10:43:28.477Z"
-      },
-      "updatedAt": {
-        "type": "string",
-        "description": "Notice date of the updating",
-        "example": "2023-12-25T11:41:12.493Z"
-      }
-    }
-  },
-  "noticesFavorites": {
-    "type": "object",
-    "properties": {
-      "_id": {
-        "type": "string",
-        "description": "Notice id",
-        "example": "6589436d05a6bcd9b9379425"
-      },
-      "species": {
-        "type": "string",
-        "description": "Pet species",
-        "example": "bird"
-      },
-      "category": {
-        "type": "string",
-        "description": "Notice category",
-        "example": "free"
-      },
-      "title": {
-        "type": "string",
-        "description": "Notice title",
-        "example": "Canary Looking for a Home"
-      },
-      "name": {
-        "type": "string",
-        "description": "Pet name",
-        "example": "Sunny"
-      },
-      "birthday": {
-        "type": "string",
-        "description": "Pet birthday",
-        "example": "2020-03-12"
-      },
-      "comment": {
-        "type": "string",
-        "description": "Notice comment",
-        "example": "Free to a caring owner. Beautiful canary."
-      },
-      "sex": {
-        "type": "string",
-        "description": "Pet sex",
-        "example": "male"
-      },
-      "location": {
-        "type": "object",
-        "properties": {
-          "_id": {
-            "type": "string",
-            "description": "Pet location id",
-            "example": "641ffcc3ae4e889a02d26d45"
-          },
-          "stateEn": {
-            "type": "string",
-            "description": "Pet location state",
-            "example": "Dnipropetrovska"
-          },
-          "cityEn": {
-            "type": "string",
-            "description": "Pet location city",
-            "example": "Dnipro"
-          }
-        }
-      },
-      "imgUrl": {
-        "type": "string",
-        "description": "Pet image url",
-        "example": "https://ftp.goit.study/img/pets/7.webp"
-      },
-      "popularity": {
-        "type": "number",
-        "description": "Notice popularity",
-        "example": 2
-      },
-      "user": {
-        "type": "object",
-        "properties": {
-          "_id": {
-            "type": "string",
-            "description": "Notice author id",
-            "example": "6576e7d0c4cc99fc5ef94221"
-          },
-          "email": {
-            "type": "string",
-            "description": "Notice author email",
-            "example": "test@gmail.com"
-          },
-          "phone": {
-            "type": "string",
-            "description": "Notice author phone",
-            "example": "+380730000000"
-          }
-        }
-      },
-      "createdAt": {
-        "type": "string",
-        "description": "Notice date of the creating",
-        "example": "2023-12-11T10:43:28.477Z"
-      },
-      "updatedAt": {
-        "type": "string",
-        "description": "Notice date of the updating",
-        "example": "2023-12-25T11:41:12.493Z"
-      }
-    }
-  },
-  "pets": {
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "_id": {
-          "type": "string",
-          "description": "Pet id",
-          "example": "3eew32e232ese2"
-        },
-        "name": {
-          "type": "string",
-          "description": "Pet name",
-          "example": "Rex"
-        },
-        "title": {
-          "type": "string",
-          "description": "Some description about pet",
-          "example": "Playful family member"
-        },
-        "imgURL": {
-          "type": "string",
-          "description": "The imgURL with pet",
-          "example": "https://test.webp"
-        },
-        "species": {
-          "type": "string",
-          "description": "Pet species",
-          "example": "dog"
-        },
-        "birthday": {
-          "type": "string",
-          "description": "Pet birthday",
-          "example": "2020-01-01"
-        },
-        "sex": {
-          "type": "string",
-          "description": "Pet sex",
-          "example": "male"
-        }
-      }
-    }
-  }
-},
-"example": {
-  
-    "_id": "65d47cee94ee27539ccf3e28",
-    "name": "TestName",
-    "email": "tesewewewewewewet@gmail.com",
-    "avatar": "https://test.png",
-    "phone": "+381111111111",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZDQ3Y2VlOTRlZTI3NTM5Y2NmM2UyOCIsImlhdCI6MTcwODQyNTk4MiwiZXhwIjoxNzk0ODI1OTgyfQ.bqrgsPxMhe7ZfrYQWskIZzX7SfwxKprkP9wV8zRYcLs",
-    "noticesViewed": [
-      {
-        "_id": "6589436d05a6bcd9b9379420",
-        "species": "dog",
-        "category": "sell",
-        "price": 150,
-        "title": "Golden Retriever Puppies",
-        "name": "Max",
-        "birthday": "2022-01-10",
-        "comment": "Adorable puppy looking for a loving home.",
-        "sex": "male",
-        "location": "641ffcc1ae4e889a02d25ca5",
-        "imgURL": "https://ftp.goit.study/img/pets/1.webp",
-        "createdAt": "2023-12-11T10:43:28.477Z",
-        "user": "6576e7d0c4cc99fc5ef94221",
-        "popularity": 3,
-        "updatedAt": "2024-02-20T10:47:23.359Z"
-      }
-    ],
-    "noticesFavorites": [
-      {
-        "_id": "6589436d05a6bcd9b9379421",
-        "species": "fish",
-        "category": "free",
-        "title": "Colorful Betta Fish",
-        "name": "Splash",
-        "birthday": "2021-04-05",
-        "comment": "Free to a good home. Beautiful betta fish.",
-        "sex": "unknown",
-        "location": "641ffcd2ae4e889a02d28d11",
-        "imgURL": "https://ftp.goit.study/img/pets/3.webp",
-        "createdAt": "2023-12-11T10:43:28.477Z",
-        "user": "6576e7d0c4cc99fc5ef94221",
-        "popularity": 3,
-        "updatedAt": "2024-02-20T10:17:49.528Z"
-      }
-    ],
-    "pets": [
-      {
-        "_id": "65d48367b3c1132894a596a3",
-        "name": "Lucie",
-        "title": "Playful family member",
-        "imgURL": "https://test2.webp",
-        "species": "cat",
-        "birthday": "2020-08-09",
-        "sex": "female",
-        "createdAt": "2024-02-20T10:48:07.780Z",
-        "updatedAt": "2024-02-20T10:48:07.780Z"
-      },
-      {
-        "_id": "65d48314cd5396262bb01808",
-        "name": "Rex",
-        "title": "Playful family member",
-        "imgURL": "https://test.webp",
-        "species": "dog",
-        "birthday": "2020-01-01",
-        "sex": "male",
-        "createdAt": "2024-02-20T10:46:44.907Z",
-        "updatedAt": "2024-02-20T10:46:44.907Z"
-      }
-    ],
-    "createdAt": "2024-02-20T10:20:30.887Z",
-    "updatedAt": "2024-02-20T10:48:07.834Z"
-}
-
-      },
-      
-    
- 
       "SignOutResponse": {
         "type": "object",
         "properties": {
@@ -1592,7 +1768,12 @@
           "description": "Notice category",
           "example": "found"
         },
-        "example": ["found", "free", "lost", "sell"]
+        "example": [
+          "found",
+          "free",
+          "lost",
+          "sell"
+        ]
       },
       "GetNoticeSexResponse": {
         "type": "array",
@@ -1601,7 +1782,12 @@
           "description": "Pet sex",
           "example": "male"
         },
-        "example": ["female", "male", "multiple", "unknown"]
+        "example": [
+          "female",
+          "male",
+          "multiple",
+          "unknown"
+        ]
       },
       "GetNoticeSpeciesResponse": {
         "type": "array",
@@ -1610,7 +1796,22 @@
           "description": "Pet species",
           "example": "dog"
         },
-        "example": ["dog", "cat", "monkey", "bird", "snake", "turtle", "lizard", "frog", "fish", "ants", "bees", "butterfly", "spider", "scorpion"]
+        "example": [
+          "dog",
+          "cat",
+          "monkey",
+          "bird",
+          "snake",
+          "turtle",
+          "lizard",
+          "frog",
+          "fish",
+          "ants",
+          "bees",
+          "butterfly",
+          "spider",
+          "scorpion"
+        ]
       },
       "AddNoticeToUserFavoritesResponse": {
         "type": "array",
@@ -1619,7 +1820,10 @@
           "description": "Notice id",
           "example": "6589436d05a6bcd9b9379425"
         },
-        "example": ["6589436d05a6bcd9b9379425", "6589436d05a6bcd9b9379423"]
+        "example": [
+          "6589436d05a6bcd9b9379425",
+          "6589436d05a6bcd9b9379423"
+        ]
       },
       "RemoveNoticeToUserFavoritesResponse": {
         "type": "array",
@@ -1628,7 +1832,10 @@
           "description": "Notice id",
           "example": "6589436d05a6bcd9b9379425"
         },
-        "example": ["6589436d05a6bcd9b9379425", "6589436d05a6bcd9b9379423"]
+        "example": [
+          "6589436d05a6bcd9b9379425",
+          "6589436d05a6bcd9b9379423"
+        ]
       },
       "GetNoticeByIdResponse": {
         "type": "object",
@@ -1760,6 +1967,57 @@
         }
       },
       "GetCitiesResponse": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "_id": {
+              "type": "string",
+              "description": "City id",
+              "example": "641ffcd4ae4e889a02d2a3d4"
+            },
+            "stateEn": {
+              "type": "string",
+              "description": "State name",
+              "example": "Poltavska"
+            },
+            "cityEn": {
+              "type": "string",
+              "description": "City name",
+              "example": "Poltava"
+            },
+            "countyEn": {
+              "type": "string",
+              "description": "County name",
+              "example": "Poltavska"
+            }
+          }
+        },
+        "example": [
+          {
+            "_id": "641ffcd5ae4e889a02d2b2f5",
+            "useCounty": "0",
+            "stateEn": "Lvivska",
+            "cityEn": "Reklynets",
+            "countyEn": "Sokalskyy"
+          },
+          {
+            "_id": "641ffcd5ae4e889a02d2b31c",
+            "useCounty": "0",
+            "stateEn": "Lvivska",
+            "cityEn": "Kulychkiv",
+            "countyEn": "Sokalskyy"
+          },
+          {
+            "_id": "641ffcd5ae4e889a02d2b32a",
+            "useCounty": "0",
+            "stateEn": "Lvivska",
+            "cityEn": "Zarika",
+            "countyEn": "Sokalskyy"
+          }
+        ]
+      },
+      "GetLocationsResponse": {
         "type": "array",
         "items": {
           "type": "object",
@@ -2004,7 +2262,6 @@
                   "description": "News text",
                   "example": "In a city of yawning class inequality, some side hustles let you glimpse how the other half lives."
                 },
-
                 "date": {
                   "type": "string",
                   "description": "News date",

@@ -1,6 +1,8 @@
-const {  CtrlWrapper } = require('../../helpers');
+const { CtrlWrapper } = require('../../helpers');
 const getCitiesByQuery = require('./getCitiesByQuery');
+const getPetsLocations = require('./getPetsLocations');
 
 module.exports = {
-  getCitiesByQuery: CtrlWrapper(getCitiesByQuery)
+  getCitiesByQuery: CtrlWrapper(getCitiesByQuery),
+  getPetsLocations: CtrlWrapper(getPetsLocations),
 };

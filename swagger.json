@@ -790,7 +790,19 @@
         ],
         "summary": "Get Ukrainian cities",
         "security": [],
-        "parameters": [],
+        "parameters": [
+          {
+            "in": "query",
+            "required": true,
+            "name": "keyword",
+            "description": "The keyword for city searching (min length: 3, max length: 48).",
+            "schema": {
+              "type": "string",
+              "minLength": 3,
+              "maxLength": 48
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -798,6 +810,36 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/GetCitiesResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Service not found",
+            "content": {}
+          },
+          "500": {
+            "description": "Server error",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/cities/locations": {
+      "get": {
+        "tags": [
+          "Cities"
+        ],
+        "summary": "Get all cities where are pets that descripted on notes",
+        "security": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetLocationsResponse"
                 }
               }
             }
@@ -1924,6 +1966,57 @@
         }
       },
       "GetCitiesResponse": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "_id": {
+              "type": "string",
+              "description": "City id",
+              "example": "641ffcd4ae4e889a02d2a3d4"
+            },
+            "stateEn": {
+              "type": "string",
+              "description": "State name",
+              "example": "Poltavska"
+            },
+            "cityEn": {
+              "type": "string",
+              "description": "City name",
+              "example": "Poltava"
+            },
+            "countyEn": {
+              "type": "string",
+              "description": "County name",
+              "example": "Poltavska"
+            }
+          }
+        },
+        "example": [
+          {
+            "_id": "641ffcd5ae4e889a02d2b2f5",
+            "useCounty": "0",
+            "stateEn": "Lvivska",
+            "cityEn": "Reklynets",
+            "countyEn": "Sokalskyy"
+          },
+          {
+            "_id": "641ffcd5ae4e889a02d2b31c",
+            "useCounty": "0",
+            "stateEn": "Lvivska",
+            "cityEn": "Kulychkiv",
+            "countyEn": "Sokalskyy"
+          },
+          {
+            "_id": "641ffcd5ae4e889a02d2b32a",
+            "useCounty": "0",
+            "stateEn": "Lvivska",
+            "cityEn": "Zarika",
+            "countyEn": "Sokalskyy"
+          }
+        ]
+      },
+      "GetLocationsResponse": {
         "type": "array",
         "items": {
           "type": "object",
